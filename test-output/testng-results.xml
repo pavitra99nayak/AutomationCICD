@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="5" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-07T21:57:18 IST" name="All Scenarios" finished-at="2025-09-07T21:57:52 IST" duration-ms="34251">
+    <groups>
+      <group name="SanityTest">
+        <method signature="RegisterScenarios.BlankClickTC2()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" name="BlankClickTC2" class="LambdaTest.LambdaTestPlaygroud.RegisterScenarios"/>
+        <method signature="RegisterScenarios.EmailAvaiableTC3()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" name="EmailAvaiableTC3" class="LambdaTest.LambdaTestPlaygroud.RegisterScenarios"/>
+        <method signature="RegisterScenarios.RegisterTC1()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" name="RegisterTC1" class="LambdaTest.LambdaTestPlaygroud.RegisterScenarios"/>
+        <method signature="LoginScenarios.LoginWithValidCredsTC1()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.LoginScenarios@2b72cb8a]" name="LoginWithValidCredsTC1" class="LambdaTest.LambdaTestPlaygroud.LoginScenarios"/>
+      </group> <!-- SanityTest -->
+    </groups>
+    <test started-at="2025-09-07T21:57:18 IST" name="Registration Test" finished-at="2025-09-07T21:57:41 IST" duration-ms="23140">
+      <class name="LambdaTest.LambdaTestPlaygroud.RegisterScenarios">
+        <test-method is-config="true" signature="LaunchLambdaApplication()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" started-at="2025-09-07T21:57:18 IST" name="LaunchLambdaApplication" finished-at="2025-09-07T21:57:24 IST" duration-ms="6466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchLambdaApplication -->
+        <test-method signature="BlankClickTC2()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" started-at="2025-09-07T21:57:24 IST" name="BlankClickTC2" finished-at="2025-09-07T21:57:29 IST" duration-ms="4808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlankClickTC2 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" started-at="2025-09-07T21:57:29 IST" name="TearDown" finished-at="2025-09-07T21:57:29 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="LaunchLambdaApplication()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" started-at="2025-09-07T21:57:29 IST" name="LaunchLambdaApplication" finished-at="2025-09-07T21:57:35 IST" duration-ms="5929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchLambdaApplication -->
+        <test-method signature="EmailAvaiableTC3()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" started-at="2025-09-07T21:57:35 IST" name="EmailAvaiableTC3" finished-at="2025-09-07T21:57:40 IST" depends-on-methods="LambdaTest.LambdaTestPlaygroud.RegisterScenarios.BlankClickTC2" duration-ms="5290" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: input-firstname (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 138.0.7204.49 (d2b48fd5f781..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60036/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ace3f6620a57082d9629a3a29b9295be]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: input-firstname (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 138.0.7204.49 (d2b48fd5f781..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60036/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ace3f6620a57082d9629a3a29b9295be
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at LambdaTest.AbstractMethods.ReusableMethods.Wait(ReusableMethods.java:22)
+at LambdaTest.PageObjects.SignUpPage.EmailAlreadyAvailable(SignUpPage.java:85)
+at LambdaTest.LambdaTestPlaygroud.RegisterScenarios.EmailAvaiableTC3(RegisterScenarios.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailAvaiableTC3 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" started-at="2025-09-07T21:57:41 IST" name="TearDown" finished-at="2025-09-07T21:57:41 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method signature="RegisterTC1()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]" started-at="2025-09-07T21:57:41 IST" name="RegisterTC1" finished-at="2025-09-07T21:57:41 IST" depends-on-methods="LambdaTest.LambdaTestPlaygroud.RegisterScenarios.EmailAvaiableTC3" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LambdaTest.LambdaTestPlaygroud.RegisterScenarios.RegisterTC1() on instance LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23 depends on not successfully finished methods 
+[LambdaTest.LambdaTestPlaygroud.RegisterScenarios.EmailAvaiableTC3() on instance LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LambdaTest.LambdaTestPlaygroud.RegisterScenarios.RegisterTC1() on instance LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23 depends on not successfully finished methods 
+[LambdaTest.LambdaTestPlaygroud.RegisterScenarios.EmailAvaiableTC3() on instance LambdaTest.LambdaTestPlaygroud.RegisterScenarios@3f1d2e23]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterTC1 -->
+      </class> <!-- LambdaTest.LambdaTestPlaygroud.RegisterScenarios -->
+    </test> <!-- Registration Test -->
+    <test started-at="2025-09-07T21:57:41 IST" name="Login Test" finished-at="2025-09-07T21:57:52 IST" duration-ms="10888">
+      <class name="LambdaTest.LambdaTestPlaygroud.LoginScenarios">
+        <test-method is-config="true" signature="LaunchLambdaApplication()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.LoginScenarios@2b72cb8a]" started-at="2025-09-07T21:57:41 IST" name="LaunchLambdaApplication" finished-at="2025-09-07T21:57:47 IST" duration-ms="6019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchLambdaApplication -->
+        <test-method signature="LoginWithValidCredsTC1()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.LoginScenarios@2b72cb8a]" started-at="2025-09-07T21:57:47 IST" name="LoginWithValidCredsTC1" finished-at="2025-09-07T21:57:51 IST" duration-ms="3943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredsTC1 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:LambdaTest.LambdaTestPlaygroud.LoginScenarios@2b72cb8a]" started-at="2025-09-07T21:57:51 IST" name="TearDown" finished-at="2025-09-07T21:57:52 IST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- LambdaTest.LambdaTestPlaygroud.LoginScenarios -->
+    </test> <!-- Login Test -->
+  </suite> <!-- All Scenarios -->
+</testng-results>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Scenarios" thread-count="5">
+<listeners>
+<listener class-name="LambdaTest.BaseMethods.Listners"/>
+</listeners>
+
+  <test thread-count="5" name="Registration Test">
+  	<classes>
+  	  <class name="LambdaTest.LambdaTestPlaygroud.RegisterScenarios"/>
+  	</classes>
+  </test>
+  
+ <test thread-count="5" name="Login Test">
+  	<classes>
+  	  <class name="LambdaTest.LambdaTestPlaygroud.LoginScenarios"/>
+  	</classes>
+  </test>
+  
+   <test thread-count="5" name="Dashboard Test">
+  	<classes>
+  	  <class name="LambdaTest.LambdaTestPlaygroud.DashboardScenarios"/>
+  	</classes>
+  </test>
+  
+   <test thread-count="5" name="SearchBar Test">
+  	<classes>
+  	  <class name="LambdaTest.LambdaTestPlaygroud.SearchBarScenarios"/>
+  	</classes>
+  </test>
+  
+  <test thread-count="5" name="Mega View Items">
+    <classes>
+      <class name="LambdaTest.LambdaTestPlaygroud.MegaMenuViewItems"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Buy Item Test">
+  	<classes>
+  	  <class name="LambdaTest.LambdaTestPlaygroud.BuyItemsScenarios"/>
+  	</classes>
+  </test>
+
+</suite> <!-- Suite -->
